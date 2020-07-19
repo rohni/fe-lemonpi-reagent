@@ -10,8 +10,8 @@
 
 (def stats-url "https://5b87a97d35589600143c1424.mockapi.io/api/v1/advertiser-statistics")
 
-(def columns [{:id 1 :display "Advertiser" :classes ""}
-              {:id 2 :display "Creation Date" :classes ""}
+(def columns [{:id 1 :display "Advertiser" :classes nil}
+              {:id 2 :display "Creation Date" :classes nil}
               {:id 3 :display "# Campaigns" :classes "number"}
               {:id 4 :display "Impressions" :classes "number"}
               {:id 5 :display "Clicks" :classes "number"}])
