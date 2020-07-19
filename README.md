@@ -1,6 +1,31 @@
 # lemonpi-reagent
 
-This is the lemonpi-reagent project.
+This is the beginning of a clojurescript frontend project for an assignment for
+Lemonpi.
+
+- advertisers api call
+- stats api call
+- Display the desired data in a table
+- Style table and page 
+
+## Still to do
+- Sorting columns (click and it will sort)
+- Persisting sort params in url
+- Tests
+
+## Notes
+There is room for a lot of improvement.
+- tests would be good.  I have been searching for any docs on how to test
+  reagent components.  i.e. why is my ^{:key ...} not appearing in my data
+  rows?!?
+- Sorting is coming, but it is time for bed
+- Styling needs a better solution using something modular.  (I bumped into
+  garden, but have to look at it more closely)
+- I'm not that happy with the check and merge mechanism to add the `clicks` and
+  `impressions` values from stats.  I will see if core.async can solve this
+  problem elegantly.  React's `useEffect` works for this really well.  And
+  Rxjs's switch- and mergeMap.  There must be something, I just have to poke
+  around and figure out how this has been solved.
 
 ## Development mode
 
