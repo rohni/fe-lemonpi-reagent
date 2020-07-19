@@ -1,0 +1,76 @@
+:root {
+  --primary-background: rgb(19, 21, 18);
+  --primary-text: rgb(202, 202, 202);
+  --secondary-background: rgb(55, 53, 53);
+  --primary-border: rgb(108, 106, 106);
+}
+
+body {
+  background-color: var(--secondary-background);
+  color: var(--primary-text);
+  padding: 1rem 2rem;
+  text-align: left;
+}
+
+.table {
+  margin: 1rem auto;
+  padding: 2rem;
+  background-color: var(--primary-background);
+  border: 1px var(--primary-border) solid;
+}
+
+.table h3 {
+  padding-bottom: 1rem;
+  border-bottom: 1px var(--primary-border) solid;
+  margin-bottom: 2rem;
+}
+
+.table table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid var(--primary-border);
+}
+
+.table table tr {
+  display: table-row;
+  border: 1px solid var(--primary-border);
+}
+
+.table table tbody tr:hover {
+  background-color: var(--secondary-background);
+}
+
+.table table th {
+  padding: 0.8rem 1rem;
+  user-select: none;
+  margin-right: 1rem;
+}
+
+.table table td {
+  border: none;
+  /* border: pink solid 1px; */
+  font-size: 0.9rem;
+  padding: 0.8rem 1rem;
+}
+
+.table .number {
+  text-align: center;
+}
+
+.sort::after {
+  content: ' ';
+  padding-right: 1rem;
+  color: var(--primary-border);
+}
+
+.sort-up::after {
+  content: '⏶';
+  margin-left: 0.5rem;
+  color: var(--primary-border);
+}
+
+.sort-down::after {
+  content: '⏷';
+  margin-left: 0.5rem;
+  color: var(--primary-border);
+}
